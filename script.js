@@ -126,6 +126,9 @@ function confirma(){
             comecarEtapa()
         } else {
             document.querySelector('.tela').innerHTML = '<div class="aviso-gigante pisca"> FIM</div>'
+            
+            let somConfirma = new Audio('som/confirma-urna.mp3')
+            somConfirma.play()
         }
         
     }
